@@ -1,0 +1,138 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    scroll-snap-align: start;
+}
+
+/* TESTING */
+#main-one {
+    background-color: yellow;
+}
+
+#main-two {
+    background-color: red;
+}
+
+#main-three {
+    background-color: green;
+}
+
+#main-text-container {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.main-text {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+/* NAVIGATION */
+#side-nav {
+    width: 10%;
+    position: fixed;
+}
+
+ul {
+    /* display: flex;
+        flex-direction: column;
+        align-content: space-between; */
+    list-style-type: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    /* margin-top: 50%;
+    margin-bottom: 100%; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.vertical-line {
+    border-left: 2px solid black;
+    height: 30px;
+    margin: 20%;
+}
+
+.long-line {
+    height: 100px;
+}
+
+/* FRONT PAGE CONTENT */
+#front-page-container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+#contact-top {
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    position: fixed;
+}
+
+.main-text {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 25%;
+    align-items: center;
+    /* align-self: center; */
+    /* justify-self: center; */
+    /* padding-top: 50%; */
+}
+
+
+/*  ARROWS */
+#arrow-navigation {
+    margin:0;
+    padding: 0;
+    /* width: 100%; */
+    height: 40%;
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+}
+
+#arrows {
+    /* align-self: flex-end; */
+    display: flex;
+}
+
+
+/* ABOUT PAGE CONTENT */
+.testing-sections {
+    width: 40%;
+    margin-left: 20%;
+    margin-bottom: 25%;
+}

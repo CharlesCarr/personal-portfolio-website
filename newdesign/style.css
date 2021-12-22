@@ -1,0 +1,169 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+#hidden-menu, #hamburger-container {
+    display: none;
+}
+
+/* TOP BAR / NAVIGATION */
+#top {
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+#ul-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li-nav {
+    padding: 1%;
+    margin: 1%;
+    width: 125px;
+}
+
+/* HOME CONTENT */
+
+.main-text-content {
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+    height: 100vh;
+}
+
+/* FIXED SIDE CONTACT INFO */
+
+#side-info-left, #side-info-right {
+    bottom: 0;
+    position: fixed;
+}
+#side-info-right {
+    right: 10%;
+}
+#social-div {
+    display: flex;
+    flex-direction: column;
+}
+#email-div {
+    writing-mode: vertical-rl;
+}
+.vertical-line {
+    border-left: 2px solid black;
+    height: 150px;
+    /* margin: 20%; */
+}
+
+/* ABOUT SECTION */
+
+#about-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* padding-right: 20%;
+    padding-left: 20%; */
+}
+
+#about-text {
+    width: 30%;
+}
+
+#total-photo-about {
+    /* width: 20%; */
+}
+
+/* PROJECTS SECTION */
+
+#projects-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects {
+    width: 70%;
+    height: 400px;
+    /* height: 100%; */
+    display: flex;
+    border: 1px solid black;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+.project-image-container { 
+/* #project-image-container { */
+    width: 60%;
+    height: 400px;
+    /* height: 100%; */
+    border: 1px solid black;
+    z-index: -1;
+    
+}
+
+.project-info-section{
+/* #project-info-section { */
+    width: 40%;
+    height: 400px;
+    /* height: 100%; */
+    border: 1px solid black;
+    /* margin-left: 1%; */
+    padding: 0 1% 0 1%;
+}
+
+#project-info-section, #project-info-section-three {
+    margin-left: 1%;
+}
+
+#project-info-section-two {
+    margin-right: 1%;
+}
+
+/* .project-top { */
+#project-top, #project-top-three {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-description {
+/* #project-description { */
+    border: 1px solid red;
+    z-index: 99;
+    width: 135%;
+    margin-top: 2%;
+    /* margin-left: -35%; */
+    background-color: grey;
+}
+
+#project-description, #project-description-three {
+    margin-left: -35%;
+}
+
+
+/* CONTACT SECTION */
+
+#full-contact-container {
+    margin-top: 30%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

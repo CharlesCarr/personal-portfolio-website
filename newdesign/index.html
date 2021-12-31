@@ -12,12 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@300&family=Mulish&family=Playfair+Display:wght@500&family=Quicksand:wght@300&family=Rampart+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src='./app.js' defer></script>
     <title>Charlie Carr</title>
 </head>
 
 <body>
 
-    <div class='container'>
+    <div id='container'>
 
         <div id='hidden-menu'>
             <nav>
@@ -32,29 +33,30 @@
         <div id='top'>
 
             <div id="top-logo">
-                <p><a href="#main-one-home">C.C.</a></p>
+                <p><a href="#container">C.C.</a></p>
             </div>
 
             <div id='top-nav'>
                 <nav>
                     <ul id="ul-nav">
-                        <li class="li-nav"><a href="#main-two-about"><span class='num-nav'>1.0</span> ABOUT</a></li>
-                        <li class="li-nav"><a href="#main-three-projects"><span class='num-nav'>2.0</span> PROJECTS</a>
+                        <li class="li-nav"><a href="#about-section"><span class='num-nav'>1.0</span> ABOUT ME</a></li>
+                        <li class="li-nav"><a href="#projects-container"><span class='num-nav'>2.0</span> PROJECTS</a>
                         </li>
-                        <li class="li-nav"><a href="#main-four-contact"><span class='num-nav'>3.0</span> CONTACT</a>
+                        <li class="li-nav"><a href="#contact-section"><span class='num-nav'>3.0</span> CONTACT</a>
                         </li>
                         <li id="resume-nav"><a href="#">RESUME</a>
                         </li>
                     </ul>
                 </nav>
-            </div>
 
-            <div id='hamburger-container'>
-                <button id='hamburger'>
-                    <div id='bar-one'></div>
-                    <div id='bar-two'></div>
-                    <div id='bar-three'></div>
-                </button>
+                <div id='hamburger-container'>
+                    <button id='hamburger'>
+                        <div id='bar-one'></div>
+                        <div id='bar-two'></div>
+                        <div id='bar-three'></div>
+                    </button>
+                </div>
+
             </div>
 
         </div>
@@ -85,16 +87,13 @@
             <div class='text-area' id='home-text'>
                 <p id='my-name'>Charlie Carr.</p>
                 <p id='tag-line'>Software Engineer.</p>
-                <button id="resume-btn"><a href='./images/Charlie Carr Resume v043021 copy.pdf' target='_blank'>MY
+                <button id="resume-btn"><a href='../images/Charlie Carr Resume v043021 copy.pdf' target='_blank'>MY
                         RESUME</a></button>
             </div>
 
-            <div class="helper">
-                <div class='personal-headshot-container'>
-                    <div class="personal-headshot-offset">
-                        <img class='headshot' src='./images/IMG_0096_300res (1).jpg' alt='headshot'></img>
-                    </div>
-                </div>
+            <div id="icon-container">
+                        <img class='main-icon' id='program-icon' src='../images/noun-programming-2123187.png' alt='program icon'></img>
+                        <img class='main-icon' id='computer-icon' src='../images/noun-programming-4394471.png' alt='computer icon'></img>
             </div>
 
         </div>
@@ -105,18 +104,24 @@
         <div id='about-section'>
 
             <div class='text-area' id='about-text'>
-                <p class='section-title'><a class='color-number'>1.0</a> About</p>
+                <p class='section-title'><a class='color-number'>1.0</a> About Me</p>
                 <p>I am a NYC-based software engineer who is actively pursuing full time employment and open to both remote and in-office work.</p>
                 <p>I graduated with a degree in Economics and have spent my career in tech working in enterprise software for both small startups as well as large tech corporations. I am passionate about the impact of technology and have a deep curiosity to learn more. After starting on the sales side of the industry, my passion and curiosity for these products fueled my desire to become more technical and attend a full stack coding bootcamp.</p>
                 <p>Outside of work, I am passionate about sports and fitness (former college athlete) and travel (studied abroad in Hong Kong and Seoul).</p>
-                <p>Skills</p>
-                <p>HTML, CSS, JavaScript</p>
+                <p>Skills:</p>
+                <ul id='skills-list'>
+                    <li class='skill'>HTML5</li>
+                    <li class='skill'>CSS3</li>
+                    <li class='skill'>JavaScript (ES6+)</li>
+                    <li class='skill'>Responsive Design</li>
+                    <li class='skill'>Git</li>
+                </ul>
             </div>
 
             <div class="helper" id='total-photo-about'>
                 <div class='personal-headshot-container'>
                     <div class="personal-headshot-offset">
-                        <img class='headshot' src='./images/IMG_0096_300res (1).jpg' alt='headshot'></img>
+                        <img class='headshot' src='../images/IMG_0096_300res (1).jpg' alt='headshot'></img>
                     </div>
                 </div>
             </div>
@@ -230,42 +235,11 @@
             <p class='section-title'><a class='color-number'>3.0</a> Contact</p>
 
             <div id='call-to-action'>
-                <p>As stated above, I am actively networking and applying for my next software engineering position. If you found something interesting here, please reach out and we can set up time for a virtual coffee. I look forward to connecting!</p>
+                <p>I am actively networking and applying for my next software engineering position. Please reach out and we can set up time for a virtual coffee. I look forward to connecting!</p>
                 <button id='bottom-email-btn'><a href="mailto:charliecarr4@gmail.com">Email Me  <i class="far fa-envelope"></i></a></button>
                 <button id='bottom-linkedin-btn'><a href="https://www.linkedin.com/in/charliecarr4/" target="_blank">InMail Me  <i
                     class="fab fa-linkedin info-stack"></i></a></button>
             </div>
-            
-
-
-            <!-- <div id='contact-form-container'>
-                <form id='contact-form'>
-
-                    <div id='contact-section-one'>
-
-                        <div id='contact-name'>
-                            <label for="fname">Name</label>
-                            <input class='c-form' type="text" id="fname" name="firstname" placeholder="Enter your name"><br>
-                        </div>
-                       
-                        <div id='contact-email'>
-                            <label for="email">Email</label>
-                            <input class='c-form' type="text" id="email" name="email" placeholder="Enter your email"><br>
-                        </div>
-                        
-                    </div>
-
-                    <div id='contact-section-two'>
-                        <label for="subject">Message</label><br>
-                        <textarea class='c-form' id="message" name="message"
-                            placeholder="Enter your message"></textarea><br>
-                    </div>
-
-                    <div id='contact-section-three'>
-                        <input id='submit-contact-message' type="submit" value="Submit">
-                    </div>
-                </form>
-            </div> -->
 
         </div>
 

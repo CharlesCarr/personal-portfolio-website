@@ -159,7 +159,7 @@ a {
     position: relative; 
     top: 60px;
 
-    animation: comp_appear 1.5s ease-in-out;
+    animation: comp_appear 2.25s ease-in-out;
 }
 
 #program-icon {
@@ -377,6 +377,7 @@ a {
     color: rgb(247, 247, 247);
     line-height: 1.6;
     border-radius: 5%;
+    font-size: 14px;
 }
 
 #project-description, #project-description-three {
@@ -433,7 +434,7 @@ a {
 #project-buttons-three button, #project-buttons-two button, #project-buttons button {
     border: 1px solid black;
     border-radius: 10%;
-    background-color: #777777;
+    background-color: #D3D3D3;
     padding: 2% 5% 2% 5%;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
@@ -676,4 +677,38 @@ a {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Hidden Menu */
+#hidden-menu {
+    min-width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 1000;
+    background-color: black;
+    top: 12%;
+    height: 100%;
+    display: none;
+    margin: 0;
+    /* confused on why I need to do this in the first place */
+    margin-left: -37.5px;
+}
+
+#hidden-menu nav ul {
+    padding: 0;
+}
+
+#hidden-menu nav li {
+    list-style-type: none;
+    /* margin-bottom: 40%; */
+    padding: 15% 40% 15% 40%;
+    /* margin-right: 5%; */
+}
+
+#hidden-menu nav li:hover {
+    background-color: grey;
+}
+
+#hidden-menu nav li a {
+    color: white;
 }

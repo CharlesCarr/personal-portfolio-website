@@ -240,6 +240,8 @@ a {
     background-color: rgb(178,178,178);
     padding: 2%;
     height: 65%;
+    min-height: 475px;
+    max-height: 500px;
     border-radius: 2%;
     /* font-size: 64px; */
 }
@@ -249,6 +251,32 @@ a {
     font-size: 28px;
 }
 
+/* New from Old Design for offset background solid color for About Section text */
+.helper {
+    margin-left: 5%;
+}
+
+.personal-headshot-container {
+    position: relative;
+    /* height: 300px;
+    width: 235px; */
+
+    border: 1px solid black;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    
+    height: 400px;
+    width: 315px;
+}
+
+.personal-headshot-offset {
+    position: relative;
+    left: -20px;
+    top: -25px;
+    /* border: 2px solid black; */
+
+}
 .headshot {
     height: 400px;
     width: 315px;
@@ -266,6 +294,7 @@ a {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    padding-left: 0;
 }
 
 .skill {
@@ -274,14 +303,6 @@ a {
     padding: 1% 2% 1% 2%;
     font-size: 12px; 
 }
-
-/* .color-number {
-    color: rgb(247, 247, 247);
-} */
-
-/* #total-photo-about {
-    /* width: 20%; */
-/* } */
 
 
 
@@ -369,6 +390,7 @@ a {
     /* border: 1px solid rgb(247, 247, 247); */
     /* z-index: 99; */
     width: 135%;
+    min-width: 350px;
     margin-top: 2%;
     /* margin-left: -35%; */
     background-color: #414141;
@@ -381,13 +403,40 @@ a {
 }
 
 #project-description, #project-description-three {
-    margin-left: -48%;
+    margin-left: -50%;
 }
 
 .project-top {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     margin-top: 5%;
+}
+
+.project-bottom {
+    width: 100%;
+}
+
+/* should be a class for all projects */
+.skills {
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.skills ul {
+    padding:0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* should be a class for all projects */
+/* #project-buttons { */
+.project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-buttons button {
+    background-color: #414141;
 }
 
 /* PROJECT THREE */
@@ -426,15 +475,16 @@ a {
     font-size: 12px;
 }
 
-#project-buttons-three {
+/* #project-buttons-three {
     display: flex;
     justify-content: flex-end;
-}
+} */
 
 #project-buttons-three button, #project-buttons-two button, #project-buttons button {
     border: 1px solid black;
     border-radius: 10%;
-    background-color: #D3D3D3;
+    background-color: #414141;
+    color: white;
     padding: 2% 5% 2% 5%;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
@@ -452,6 +502,8 @@ a {
     height: 100vh;
     width: 100%;
     margin-top: 30%;
+    display: flex;
+    justify-content: center;
 
 }
 #full-contact-container {
@@ -464,6 +516,9 @@ a {
     background-color: rgb(178,178,178);
     border-radius: 2%;
     border: 1px solid black;
+    width: 60%;
+    min-width: 350px;
+    max-height: 350px;
 }
 
 #call-to-action {
@@ -571,6 +626,91 @@ a {
     
     }
 
+
+    /* About Section */
+    /* Remove photo */
+    #total-photo-about {
+        display: none;
+    }
+    
+    /* Project Section */
+    /* Project Description positioning */
+    #project-description, #project-description-three {
+        margin-left: -60%;
+    }
+
+    .project-top p {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1080px) {
+    /* Projects */
+    /* Put image behind information container */
+  .project-image-container {
+      display: none;
+  }
+  .project-info-section {
+      width: 100%;
+  }
+  .project-description {
+      padding: 2% 5% 3% 5%;
+      margin: 0;
+      margin-left: 0 !important;
+      width: 90%;
+      min-width: 200px;
+      height: 30%;
+      text-align: center;
+  }
+  .project-top {
+      justify-content: center !important;
+      color: white;
+      border: 1px solid black;
+      background-color: grey;
+      border-radius: 5%;
+      margin-left: 25%; 
+      margin-right: 25%;
+      margin-bottom: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+      /* padding-top: 1%; */
+      /* padding-bottom: 2%; */
+  }
+  #project-top-two {
+      display: flex;
+      justify-content: center !important;
+  }
+
+  .skills li {
+    padding: 3% !important;
+  }
+
+  .project-buttons button {
+      padding-right: 3% !important;
+      padding-left: 3% !important;
+  }
+
+  /* add background individually for each project */
+  #project-info-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/ParkCityHotelWebsite.png');
+      /* background-image: url('../images/ParkCityHotelWebsite.png'); */
+  }
+  #project-info-section-two {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/RockPaperScissorsGame.png');
+    /* background-image: url('../images/RockPaperScissorsGame.png');  */
+  }
+  #project-info-section-three {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/TeslaCloneProject.png');
+    /* background-image: url('../images/TeslaCloneProject.png');  */
+  }
+
+  #project-info-section, #project-info-section-two, #project-info-section-three {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+
 }
 
 @media only screen and (max-width: 730px) {
@@ -627,9 +767,21 @@ a {
         margin-left: 5%;
     
     }
+
+    /* About Section */
+    /* Change font size and width */
+    #about-text {
+        min-width: 320px;
+        font-size: 12px;
+    }
+    /* Need to change skills containers */
+    .skill {
+        font-size: 8px;
+    }
+
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 455px) {
 
     .main-text-content {
         flex-direction: column;
@@ -653,6 +805,37 @@ a {
         width: 75px;
         top: 110px;
         left: 35px;
+    }
+
+    /* About Section */
+    /* Change font size and width */
+    #about-text {
+        min-width: 230px;
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 50px;
+    }
+    /* Need to change skills containers */
+    #skills-list {
+        padding-left: 0;
+    }
+    .skill {
+        font-size: 6px;
+    }
+
+    /* Contact Section */
+    #full-contact-container {
+        min-width: 200px;
+        font-size: 12px;
+    }
+
+    .section-title {
+        margin-bottom: 0;
+    }
+
+    #call-to-action button {
+        font-size: 12px;
     }
 
 

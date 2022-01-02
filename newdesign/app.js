@@ -2,6 +2,8 @@
 
 const hamburgerBtn = document.getElementById('hamburger-container');
 const hiddenMenu = document.getElementById('hidden-menu');
+const topLogo = document.getElementById('logo');
+const topContainer = document.getElementById('top');
 
 hamburgerBtn.addEventListener('click', hamburgerFunc);
 
@@ -11,13 +13,30 @@ function hamburgerFunc() {
 
     if (hamburgerBtn.classList.contains('change')) {
         hiddenMenu.style.display = 'block';
+        topLogo.style.color = 'white';
+        body.style.overflowY = 'hidden';
+        // top.style.position = 'fixed';
+        // document.style.overflowY="hidden";
+        // fullContainer.style.padding = '0';
+
+        // window.addEventListener('click', hamburgerFunc);
+
+
+
     } else {
         hiddenMenu.style.display = 'none';
+        topLogo.style.color = 'black';
     }
 };
 
 // Need to write a function for when a selection is made to close the menu
+hiddenMenu.addEventListener('click', closeMenu);
 
+function closeMenu() {
+    hiddenMenu.style.display = 'none';
+    topLogo.style.color = 'black';
+    hamburgerBtn.classList.toggle('change');
+};
 
 
 // SMOOTH SCROLL JS

@@ -84,6 +84,10 @@ a {
     width: 90%;
 }
 
+#top-nav {
+    display: flex;
+}
+
 #top-logo {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
@@ -91,14 +95,17 @@ a {
 }
 
 
+
 #resume-nav {
     padding: 1%;
+    /* padding: 1% 2% 1% 2%; */
     margin: 1%;
     width: 80px;
+    height: 20px;
     background-color: black;
     font-family: 'Quicksand', sans-serif;
     /* border: 1px solid black; */
-    border-radius: 8%;
+    border-radius: 5px;
     z-index: 101;
 
     transition: all ease-in 200ms;
@@ -156,8 +163,8 @@ a {
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     border: 1px solid black;
-    border-radius: 15%;
-    /* background-color: lightslategray; */
+    /* border-radius: 15%; */
+    border-radius: 5px;
     padding: 3% 8% 3% 8%;
     margin-top: 5%;
     cursor: pointer;
@@ -326,7 +333,7 @@ a {
 
 .skill {
     border: 1px solid black;
-    border-radius: 15%;
+    border-radius: 10px;
     padding: 1% 2% 1% 2%;
     font-size: 12px; 
 }
@@ -350,8 +357,10 @@ a {
     /* height: 100%; */
     display: flex;
     border: 1px solid black;
-    padding: 1%;
+    border-radius: 10px;
+    padding: 3%;
     margin-bottom: 8%;
+    background-color: grey;
 }
 
 /* test for design */
@@ -383,6 +392,7 @@ a {
     height: 400px;
     /* height: 100%; */
     border: 1px solid black;
+    border-radius: 10px;
     /* z-index: 90; */
     
 }
@@ -393,6 +403,8 @@ a {
     height: 400px;
     /* height: 100%; */
     border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
     /* margin-left: 1%; */
     padding: 0 1% 0 1%;
     z-index: 99;
@@ -425,7 +437,7 @@ a {
     padding: 2% 10% 2% 9%;
     color: rgb(247, 247, 247);
     line-height: 1.6;
-    border-radius: 5%;
+    border-radius: 10px;
     font-size: 14px;
 }
 
@@ -473,6 +485,7 @@ a {
     height: 100%;
     object-fit: cover;
     filter: brightness(15%);
+    border-radius: 10px;
     /* z-index: -99; */
 
     transition: all ease-in-out 500ms;
@@ -498,7 +511,7 @@ a {
     background-color: rgb(247, 247, 247);
     color: #565656;
     border-radius: 50%;
-    padding: 8% 8% 8% 8%;
+    padding: 8% 6% 8% 6%;
     font-size: 12px;
 }
 
@@ -509,7 +522,7 @@ a {
 
 #project-buttons-three button, #project-buttons-two button, #project-buttons button {
     border: 1px solid black;
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: #414141;
     color: white;
     padding: 2% 5% 2% 5%;
@@ -542,7 +555,7 @@ a {
     margin: 0% 25% 0% 25%;
     padding: 2%;
     background-color: rgb(178,178,178);
-    border-radius: 2%;
+    border-radius: 30px;
     border: 1px solid black;
     width: 60%;
     min-width: 350px;
@@ -559,7 +572,7 @@ a {
 
 #call-to-action button {
     border: 1px solid black;
-    border-radius: 10%;
+    border-radius: 5px;
     padding: 2% 5% 2% 5%;
     margin-top: 5%;
     font-family: 'Quicksand', sans-serif;

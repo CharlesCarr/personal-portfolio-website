@@ -53,18 +53,35 @@ a {
     padding: 1%;
     margin: 1%;
     width: 125px;
+    position: relative;
     
 }
 
 .li-nav a {
     font-family: 'Quicksand', sans-serif;
-    transition: font-weight ease-in 350ms;
+    transition: text-decoration ease-in 350ms;
     z-index: 101;
 }
 
-.li-nav a:hover {
-    font-weight: bold;
+/* .li-nav a:hover {
+    text-decoration: underline;
 
+} */
+
+.li-nav a::after {
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 0;
+    background-color:  black;
+    position: absolute;
+    bottom: 0;
+
+    transition: all ease-in-out 300ms;
+}
+
+.li-nav a:hover::after {
+    width: 90%;
 }
 
 #top-logo {

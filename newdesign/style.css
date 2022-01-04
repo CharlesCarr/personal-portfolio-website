@@ -638,6 +638,12 @@ a {
 
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 1380px) {
+    #project-description, #project-description-three {
+        margin-left: -60%;
+    }
+
+
 
 @media only screen and (max-width: 1300px) {
 
@@ -681,13 +687,25 @@ a {
     /* Project Section */
     /* Project Description positioning */
     #project-description, #project-description-three {
-        margin-left: -60%;
+        margin-left: -70%;
     }
 
     .project-top p {
         font-size: 20px;
     }
 
+}
+
+@media only screen and (max-width: 1220px) {
+    #project-description, #project-description-three {
+        margin-left: -80%;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    #project-description, #project-description-three {
+        margin-left: -90%;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -722,6 +740,11 @@ a {
       /* padding-top: 1%; */
       /* padding-bottom: 2%; */
   }
+
+  .project-top p {
+      font-size: 16px;
+  }
+
   #project-top-two {
       display: flex;
       justify-content: center !important;
@@ -756,6 +779,13 @@ a {
   background-repeat: no-repeat;
   }
   
+
+}
+
+@media only screen and (max-width: 775px) {
+    .project-description p { 
+        font-size: 12px;
+    }
 
 }
 
@@ -827,6 +857,13 @@ a {
 
 }
 
+@media only screen and (max-width: 600px) {
+    .project-description p { 
+        font-size: 10px;
+    }
+
+}
+
 @media only screen and (max-width: 455px) {
 
     .main-text-content {
@@ -884,6 +921,45 @@ a {
         font-size: 12px;
     }
 
+    /* Projects */
+    .project-description {
+        width: auto;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    /* .project-info-section {
+        width: 100%;
+    } */
+
+    .project-description {
+        min-width: 175px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    /* .project-info-section {
+        width: 100%;
+    } */
+
+    .project-description {
+        min-width: 145px;
+        height: 170px;
+    }
+
+}
+
+@media only screen and (max-width: 330px) {
+    /* .project-info-section {
+        width: 100%;
+    } */
+
+    .project-description {
+        min-width: 140px;
+        height: 170px;
+    }
 
 }
 

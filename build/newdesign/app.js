@@ -104,7 +104,7 @@ const resumeButton = document.getElementById('resume-btn');
 
 const openResume = () => {
     console.log('working');
-    window.open('/Users/charliecarr/Documents/AUTODIDACTICISM - LIFE LONG LEARNING /RESTART_DEV/PortfolioSite/images/Charlie Carr Resume v043021 copy.pdf', '_blank');
+    window.open('./images/Charlie Carr Resume v043021 copy.pdf', '_blank');
 };
 
 resumeButton.addEventListener('click', openResume);

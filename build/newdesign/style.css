@@ -456,12 +456,6 @@ a {
     width: 100%;
 }
 
-/* should be a class for all projects */
-.skills {
-    /* display: flex;
-    justify-content: space-evenly; */
-}
-
 .skills ul {
     padding:0;
     display: flex;
@@ -529,7 +523,7 @@ a {
     padding: 2% 5% 2% 5%;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
-
+    cursor: pointer;
 }
 
 #code-three {
@@ -940,9 +934,6 @@ a {
 }
 
 @media only screen and (max-width: 380px) {
-    /* .project-info-section {
-        width: 100%;
-    } */
 
     .project-description {
         min-width: 145px;
@@ -952,9 +943,6 @@ a {
 }
 
 @media only screen and (max-width: 330px) {
-    /* .project-info-section {
-        width: 100%;
-    } */
 
     .project-description {
         min-width: 140px;
@@ -1071,4 +1059,5 @@ a {
     font-family: 'Quicksand', sans-serif;
     padding-top: 15%;
     padding-bottom: 15%;
+}
 }

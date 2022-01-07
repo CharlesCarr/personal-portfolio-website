@@ -103,8 +103,21 @@ navContact.addEventListener('click', function() {
 const resumeButton = document.getElementById('resume-btn');
 
 const openResume = () => {
-    console.log('working');
     window.open('./images/Charlie Carr Resume v043021 copy.pdf', '_blank');
 };
 
 resumeButton.addEventListener('click', openResume);
+
+
+// GitHub Buttons for Projects
+
+// Variables for GitHub Buttons
+const teslaGitHub = document.getElementById('code-three');
+
+// Adding Event Listeners
+teslaGitHub.addEventListener('click', teslaToGH);
+
+// Tesla to GitHub Function
+function teslaToGH() {
+    window.open('https://github.com/CharlesCarr/tesla-clone', '_blank');
+}

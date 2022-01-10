@@ -7,7 +7,7 @@ html, body {
     width: min(100%, 1800px);
 
     /* center and contain for bigger screen sizes */
-    max-width: 1600px; 
+    max-width: 1900px; 
 	margin: 0 auto !important; 
 	float: none !important;
 }
@@ -641,7 +641,7 @@ a {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1900px) {
     #side-info-right {
         display: none;  
     }

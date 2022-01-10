@@ -583,10 +583,12 @@ a {
 
 #bottom-email-btn {
     margin-right: 2%;
+    cursor: pointer;
 }
 
 #bottom-linkedin-btn {
     margin-left: 2%;
+    cursor: pointer;
 }
 
 /* HAMBURGER MENU */
@@ -833,6 +835,10 @@ a {
         /* display: flex;
         justify-content: flex-start;
         color: white; */
+    }
+
+    #hamburger-container button {
+        border-radius: 5px;
     }
 
     #top-nav {

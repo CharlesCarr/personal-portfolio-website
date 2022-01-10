@@ -156,3 +156,21 @@ function rockPaperScissorsToDemo() {
 function teslaToDemo() {
     window.open('https://charlescarr.github.io/tesla-clone/', '_blank');
 }
+
+// Contact Buttons
+const emailBtn = document.getElementById('bottom-email-btn');
+const linkedinBtn = document.getElementById('bottom-linkedin-btn');
+
+// Event Listeners
+emailBtn.addEventListener('click', toEmail);
+linkedinBtn.addEventListener('click', toLinkedIn);
+
+// Email Function
+function toEmail() {
+    parent.location='mailto:charliecarr4@gmail.com';
+}
+
+// LinkedIn Function
+function toLinkedIn() {
+    window.open('https://www.linkedin.com/in/charliecarr4/', '_blank');
+}

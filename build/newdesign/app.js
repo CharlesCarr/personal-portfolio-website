@@ -112,12 +112,47 @@ resumeButton.addEventListener('click', openResume);
 // GitHub Buttons for Projects
 
 // Variables for GitHub Buttons
+const parkCityGitHub = document.getElementById('code');
+const rockPaperScissorsGitHub = document.getElementById('code-two');
 const teslaGitHub = document.getElementById('code-three');
+const parkCityDemo = document.getElementById('demo');
+const rockPaperScissorsDemo = document.getElementById('demo-two');
+const teslaDemo = document.getElementById('demo-three');
 
 // Adding Event Listeners
+parkCityGitHub.addEventListener('click', parkCityToGH);
+rockPaperScissorsGitHub.addEventListener('click', rockPaperScissorsToGH);
 teslaGitHub.addEventListener('click', teslaToGH);
+parkCityDemo.addEventListener('click', parkCityToDemo);
+rockPaperScissorsDemo.addEventListener('click', rockPaperScissorsToDemo);
+teslaDemo.addEventListener('click', teslaToDemo);
 
+// GitHub Functions
+
+// Park City to GitHub Function
+function parkCityToGH() {
+    window.open('https://github.com/CharlesCarr/park-city-hotel', '_blank');
+}
+// Rock, Paper, Scissors to GitHub Function
+function rockPaperScissorsToGH() {
+    window.open('https://github.com/CharlesCarr/rock-paper-scissors-game', '_blank');
+}
 // Tesla to GitHub Function
 function teslaToGH() {
     window.open('https://github.com/CharlesCarr/tesla-clone', '_blank');
+}
+
+// Demo Functions
+
+// Park City to GitHub Function
+function parkCityToDemo() {
+    window.open('https://charlescarr.github.io/park-city-hotel/', '_blank');
+}
+// Rock, Paper, Scissors to GitHub Function
+function rockPaperScissorsToDemo() {
+    window.open('https://charlescarr.github.io/rock-paper-scissors-game/', '_blank');
+}
+// Tesla to GitHub Function
+function teslaToDemo() {
+    window.open('https://charlescarr.github.io/tesla-clone/', '_blank');
 }

@@ -5,6 +5,11 @@ html, body {
     height: auto;
     background-color: rgb(247, 247, 247);
     width: min(100%, 1800px);
+
+    /* center and contain for bigger screen sizes */
+    max-width: 1600px; 
+	margin: 0 auto !important; 
+	float: none !important;
 }
 
 #container {
@@ -226,8 +231,9 @@ a {
 }
 
 #side-info-right {
-    right: 8%;  
+    left: 92%;  
 }
+
 #social-div {
     display: flex;
     flex-direction: column;
@@ -632,12 +638,12 @@ a {
 
 
 /* MEDIA QUERIES */
+
 @media only screen and (max-width: 1380px) {
     #project-description, #project-description-three {
         margin-left: -60%;
     }
-
-
+}
 
 @media only screen and (max-width: 1300px) {
 
@@ -1059,5 +1065,4 @@ a {
     font-family: 'Quicksand', sans-serif;
     padding-top: 15%;
     padding-bottom: 15%;
-}
 }

@@ -89,7 +89,7 @@ navAbout.addEventListener('click', function() {
 
 navProjects.addEventListener('click', function() {
     console.log('working');
-    smoothScroll('#projects-container', 2000);
+    smoothScroll('#full-projects-container', 2000);
 });
 
 
@@ -101,12 +101,14 @@ navContact.addEventListener('click', function() {
 // Resume Button Click
 
 const resumeButton = document.getElementById('resume-btn');
+const resumeNav = document.getElementById('resume-nav');
 
 const openResume = () => {
     window.open('./images/CHARLIE_CARR_RESUME_JAN_2022_PORTFOLIO.pdf', '_blank');
 };
 
 resumeButton.addEventListener('click', openResume);
+resumeNav.addEventListener('click', openResume);
 
 
 // GitHub Buttons for Projects

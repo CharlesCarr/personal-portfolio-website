@@ -1,0 +1,23 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "My personal portfolio website to display my software development projects and provide career information",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesCarr/personal-portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlesCarr/personal-portfolio-website/issues"
+  },
+  "homepage": "https://charlescarr.github.io/personal-portfolio-website",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

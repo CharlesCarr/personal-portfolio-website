@@ -103,7 +103,7 @@ navContact.addEventListener('click', function() {
 const resumeButton = document.getElementById('resume-btn');
 
 const openResume = () => {
-    window.open('./images/Charlie Carr Resume v043021 copy.pdf', '_blank');
+    window.open('./images/CHARLIE_CARR_RESUME_JAN_2022_PORTFOLIO.pdf', '_blank');
 };
 
 resumeButton.addEventListener('click', openResume);

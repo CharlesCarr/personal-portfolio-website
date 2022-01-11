@@ -291,6 +291,7 @@ a {
     max-height: 500px;
     border-radius: 2%;
     border: 1px solid black;
+    box-shadow: 1px 2px;
     /* font-size: 64px; */
 }
 
@@ -369,6 +370,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 1px 2px;
 
 
     background-color: rgb(178,178,178);
@@ -530,7 +532,17 @@ a {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
+
+    transition: all ease-in 200ms;
 }
+
+#project-buttons-three button:hover,
+#project-buttons-two button:hover,
+#project-buttons button:hover {
+    background-color: rgb(178,178,178);
+    color: black;
+}
+
 
 #code-three {
     margin-right: 5%;
@@ -561,6 +573,7 @@ a {
     width: 60%;
     min-width: 350px;
     max-height: 350px;
+    box-shadow: 1px 2px;
 }
 
 #call-to-action {
@@ -579,6 +592,15 @@ a {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     font-size: 16px;
+    transition: all ease-in 200ms;
+}
+
+#call-to-action button:hover {
+    background-color:rgba(0, 0, 0, 0.75); 
+}
+
+#call-to-action button:hover > a {
+    color: rgb(247, 247, 247);
 }
 
 #bottom-email-btn {

@@ -13,7 +13,7 @@ function hamburgerFunc() {
 
     if (hamburgerBtn.classList.contains('change')) {
         hiddenMenu.style.display = 'block';
-        topLogo.style.color = 'white';
+        topLogo.style.color = 'black';
         body.style.overflowY = 'hidden';
         // top.style.position = 'fixed';
         // document.style.overflowY="hidden";
@@ -83,18 +83,15 @@ const navContact = document.getElementById('contact-nav');
 
 
 navAbout.addEventListener('click', function() {
-    console.log('working');
     smoothScroll('#about-section', 2000);
 });
 
 navProjects.addEventListener('click', function() {
-    console.log('working');
     smoothScroll('#full-projects-container', 2000);
 });
 
 
 navContact.addEventListener('click', function() {
-    console.log('working');
     smoothScroll('#contact-section', 2000);
 });
 
@@ -114,14 +111,23 @@ resumeNav.addEventListener('click', openResume);
 // GitHub Buttons for Projects
 
 // Variables for GitHub Buttons
-const parkCityGitHub = document.getElementById('code');
-const rockPaperScissorsGitHub = document.getElementById('code-two');
-const teslaGitHub = document.getElementById('code-three');
-const parkCityDemo = document.getElementById('demo');
-const rockPaperScissorsDemo = document.getElementById('demo-two');
-const teslaDemo = document.getElementById('demo-three');
+const workoutDemo = document.getElementById('demo-workout');
+const wordleDemo = document.getElementById('demo-wordle');
+const workoutGitHub = document.getElementById('gh-workout');
+const wordleGitHub = document.getElementById('gh-wordle');
+const parkCityGitHub = document.getElementById('gh-parkcity');
+const rockPaperScissorsGitHub = document.getElementById('gh-rps');
+const teslaGitHub = document.getElementById('gh-tesla');
+const parkCityDemo = document.getElementById('demo-parkcity');
+const rockPaperScissorsDemo = document.getElementById('demo-rps');
+const teslaDemo = document.getElementById('demo-tesla');
+
 
 // Adding Event Listeners
+workoutGitHub.addEventListener('click', workoutToGH);
+workoutDemo.addEventListener('click', workoutToDemo);
+wordleGitHub.addEventListener('click', wordleToGH);
+wordleDemo.addEventListener('click', wordleToDemo);
 parkCityGitHub.addEventListener('click', parkCityToGH);
 rockPaperScissorsGitHub.addEventListener('click', rockPaperScissorsToGH);
 teslaGitHub.addEventListener('click', teslaToGH);
@@ -131,6 +137,14 @@ teslaDemo.addEventListener('click', teslaToDemo);
 
 // GitHub Functions
 
+// Workout to GitHub Function
+function workoutToGH() {
+    window.open('https://github.com/CharlesCarr/react-workout-app', '_blank');
+}
+// Wordle to GitHub Function
+function wordleToGH() {
+    window.open('https://github.com/CharlesCarr/wordle-sports', '_blank');
+}
 // Park City to GitHub Function
 function parkCityToGH() {
     window.open('https://github.com/CharlesCarr/park-city-hotel', '_blank');
@@ -146,6 +160,14 @@ function teslaToGH() {
 
 // Demo Functions
 
+// Workout to GitHub Function
+function workoutToDemo() {
+    window.open('https://charlescarr.github.io/react-workout-app/', '_blank');
+}
+// Wordle to GitHub Function
+function wordleToDemo() {
+    window.open('https://charlescarr.github.io/wordle-sports/wordle-sports/index.html', '_blank');
+}
 // Park City to GitHub Function
 function parkCityToDemo() {
     window.open('https://charlescarr.github.io/park-city-hotel/', '_blank');
@@ -159,20 +181,23 @@ function teslaToDemo() {
     window.open('https://charlescarr.github.io/tesla-clone/', '_blank');
 }
 
+
+//  No longer needed with links directly in HTML 
+
 // Contact Buttons
-const emailBtn = document.getElementById('bottom-email-btn');
-const linkedinBtn = document.getElementById('bottom-linkedin-btn');
+// const emailBtn = document.getElementById('bottom-email-btn');
+// const linkedinBtn = document.getElementById('bottom-linkedin-btn');
 
 // Event Listeners
-emailBtn.addEventListener('click', toEmail);
-linkedinBtn.addEventListener('click', toLinkedIn);
+// emailBtn.addEventListener('click', toEmail);
+// linkedinBtn.addEventListener('click', toLinkedIn);
 
 // Email Function
-function toEmail() {
-    parent.location='mailto:charliecarr4@gmail.com';
-}
+// function toEmail() {
+//     parent.location='mailto:charliecarr4@gmail.com';
+// }
 
 // LinkedIn Function
-function toLinkedIn() {
-    window.open('https://www.linkedin.com/in/charliecarr4/', '_blank');
-}
+// function toLinkedIn() {
+//     window.open('https://www.linkedin.com/in/charliecarr4/', '_blank');
+// }

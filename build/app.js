@@ -98,14 +98,14 @@ navContact.addEventListener('click', function() {
 // Resume Button Click
 
 const resumeButton = document.getElementById('resume-btn');
-const resumeNav = document.getElementById('resume-nav');
+// const resumeNav = document.getElementById('resume-nav');
 
 const openResume = () => {
-    window.open('./images/CHARLIE_CARR_RESUME_JAN_2022_PORTFOLIO.pdf', '_blank');
+    window.open('./images/CHARLIE_CARR_RESUME_FEB2022.pdf', '_blank');
 };
 
 resumeButton.addEventListener('click', openResume);
-resumeNav.addEventListener('click', openResume);
+// resumeNav.addEventListener('click', openResume);
 
 
 // GitHub Buttons for Projects

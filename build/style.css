@@ -770,6 +770,18 @@ hr.solid {
 
     }
 
+    #side-info-left, #side-info-right {
+        display: none;
+    }
+
+    #projects-container {
+        width: 100%;
+    }
+
+    #about-text {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {

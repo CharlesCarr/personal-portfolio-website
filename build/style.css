@@ -91,6 +91,9 @@ a {
     font-size: 40px;
     font-weight: bold;
     z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -99,8 +102,10 @@ a {
     border-radius: 5px;
     width: 100%;
     padding: 5%;
-    background-color: #eeeeee;
     background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -529,7 +534,7 @@ hr.solid {
     margin: 0% 25% 0% 25%;
     padding: 2%;
     width: 60%;
-    min-width: 350px;
+    min-width: 400px;
     max-height: 350px;
 }
 
@@ -556,6 +561,12 @@ hr.solid {
     color: rgb(247, 247, 247);
 }
 
+#bottom-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #bottom-email-btn {
     background-color: #fafafa;
     margin-right: 2%;
@@ -567,6 +578,7 @@ hr.solid {
     margin-left: 2%;
     cursor: pointer;
 }
+
 
 .contact-description {
     line-height: 1.6;
@@ -835,13 +847,13 @@ hr.solid {
     #skills-list {
         padding-left: 0;
     }
-    .skill {
+    /* .skill {
         font-size: 6px;
-    }
+    } */
 
     /* Contact Section */
     #full-contact-container {
-        min-width: 200px;
+        min-width: 250px;
         font-size: 12px;
     }
 
@@ -855,9 +867,12 @@ hr.solid {
 
     .new-project-description, 
     .past-project-description,
-    .new-project-skill,
+    .new-project-skill { 
+        font-size: 10px;
+    }
+
     .new-project-btn,
-    .past-project-btn { 
+    .past-project-btn {
         font-size: 8px;
     }
 }

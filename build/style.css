@@ -435,7 +435,7 @@ hr.solid {
 }
 
 .new-project-btn:hover {
-    background-color: #757575;
+    background-color:rgba(0, 0, 0, 0.75);
     color: #e0e0e0;
 }
 
@@ -495,7 +495,7 @@ hr.solid {
 }
 
 .past-project-btn:hover {
-    background-color: #757575;
+    background-color:rgba(0, 0, 0, 0.75);
     color: #e0e0e0;
 }
 

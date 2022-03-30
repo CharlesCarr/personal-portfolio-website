@@ -139,7 +139,7 @@ teslaDemo.addEventListener('click', teslaToDemo);
 
 // Workout to GitHub Function
 function workoutToGH() {
-    window.open('https://github.com/CharlesCarr/react-workout-app', '_blank');
+    window.open('https://github.com/CharlesCarr/workout-v2', '_blank');
 }
 // Wordle to GitHub Function
 function wordleToGH() {
@@ -162,7 +162,7 @@ function teslaToGH() {
 
 // Workout to GitHub Function
 function workoutToDemo() {
-    window.open('https://charlescarr.github.io/react-workout-app/', '_blank');
+    window.open('https://workout-tracker-faa13.web.app/', '_blank');
 }
 // Wordle to GitHub Function
 function wordleToDemo() {

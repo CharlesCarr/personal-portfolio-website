@@ -8,7 +8,7 @@ I designed and built this mobile friendly, responsive project portfolio with HTM
 
 ## Current Projects
 
-1. [React Workout App](https://github.com/CharlesCarr/react-workout-app)
+1. [React Workout App](https://workout-tracker-faa13.web.app/)
 2. [Wordle Sports App](https://github.com/CharlesCarr/wordle-sports)
 3. [Park City Hotel Website](https://github.com/CharlesCarr/park-city-hotel)
 4. [Rock, Paper, Scissors Game](https://github.com/CharlesCarr/rock-paper-scissors-game)
@@ -18,4 +18,4 @@ I designed and built this mobile friendly, responsive project portfolio with HTM
 
 Hosted with GitHub Pages
 
-Link: [My Portfolio Website](https://charlescarr.github.io/personal-portfolio-website/)
+Link: [My Portfolio Website](https://charlie-carr.com)

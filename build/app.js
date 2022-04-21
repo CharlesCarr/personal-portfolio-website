@@ -101,7 +101,7 @@ const resumeButton = document.getElementById('resume-btn');
 // const resumeNav = document.getElementById('resume-nav');
 
 const openResume = () => {
-    window.open('./images/CHARLIE_CARR_RESUME_FEB2022.pdf', '_blank');
+    window.open('./images/CHARLIE_CARR_APRIL2022_RESUME).pdf', '_blank');
 };
 
 resumeButton.addEventListener('click', openResume);
